@@ -1,0 +1,15 @@
+type Project {
+  id: ID!
+  title: String!
+  date: String!
+  tags: [String!]!
+  description: String!
+  content: String!
+  lang: String!
+  slug: String!
+}
+
+type Query {
+  projects(lang: String): [Project!]!
+  project(slug: String!): Project
+}

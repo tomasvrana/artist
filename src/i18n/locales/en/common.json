@@ -1,0 +1,80 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Gallery",
+    "shop": "Shop",
+    "events": "Events",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Frontend Developer",
+    "description": "ulrtra cool",
+    "cta": "View"
+  },
+  "home": {
+    "featuredProjects": "EnVybrané projekty"
+  },
+  "about": {
+    "title": "about",
+    "description": "En frontend vývojář..."
+  },
+  "portfolio": {
+    "title": "Gallery",
+    "available": "Available",
+    "sold": "Sold",
+    "over": "Over",
+    "public": "Public",
+    "removed": "Removed",
+    "width": "Width",
+    "height": "Height",
+    "sale": "Sale",
+    "reduction": "Reduction",
+    "oldprice": "Old price",
+    "price": "Price",
+    "location": "Location",
+    "technique": "Technique",
+    "selectcurrency": "Select currency",
+    "allProjects": "All",
+    "noProjects": "Nothing found",
+    "readMore": "More",
+    "viewProject": "View",
+    "projectNotFound": "Not found",
+    "links": "Links",
+    "viewDemo": "View Demo",
+    "viewCode": "View Code"
+  },
+    "shop": {
+    "title": "Shop",
+    "addToCart": "Add to Cart",
+    "outOfStock": "Out of Stock",
+    "backToShop": "Back to Shop",
+    "quantity": "Quantity",
+    "inStock": "In Stock",
+    "specifications": "Specifications"
+  },
+  "categories": {
+    "all": "All",
+    "skincare": "Skincare",
+    "makeup": "Makeup",
+    "accessories": "Accessories"
+  },
+  "tags": {
+    "painting": "Painting",
+    "canvas": "Canvas",
+    "available": "Available",
+    "public": "Public",
+    "removed": "Removed",
+    "over": "Over",
+    "sold": "Sold",
+    "installation": "Installation",
+    "performance": "Performance"
+  },
+  "common": {
+    "title": "Tomas Vrana",
+    "loading": "Loading stuff",
+    "back": "Back",
+    "made": "Handmade with glove in React",
+    "allrights": "All rights reserved"
+  }
+}

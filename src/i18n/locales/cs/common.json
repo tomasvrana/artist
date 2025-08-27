@@ -1,0 +1,73 @@
+{
+  "navigation": {
+    "home": "Domů",
+    "about": "O nás",
+    "contact": "Kontakt",
+    "portfolio": "Portfolio"
+  },
+  "hero": {
+    "title": "Frontend Developer",
+    "description": "Tvořím krásné a responzivní webové aplikace",
+    "cta": "Zobrazit projekty"
+  },
+  "home": {
+    "featuredProjects": "Vybrané projekty"
+  },
+  "about": {
+    "title": "O mně",
+    "description": "Jsem frontend vývojář..."
+  },
+  "portfolio": {
+    "title": "Moje projekty",
+    "allProjects": "Všechny",
+    "available": "Skladem",
+    "sold": "Prodáno",
+    "noProjects": "Žádné projekty nenalezeny",
+    "readMore": "Číst více",
+    "viewProject": "Zobrazit projekt",
+    "projectNotFound": "Projekt nenalezen",
+    "links": "Odkazy",
+    "viewDemo": "Zobrazit demo",
+    "viewCode": "Zobrazit kód"
+  },
+    "shop": {
+    "title": "E-shop",
+    "addToCart": "Přidat do košíku",
+    "outOfStock": "Vyprodáno",
+    "backToShop": "Zpět do obchodu",
+    "quantity": "Množství",
+    "inStock": "Skladem",
+    "specifications": "Specifikace"
+  },
+  "categories": {
+    "all": "Vše",
+    "skincare": "Péče o pleť",
+    "makeup": "Make-up",
+    "accessories": "Doplňky"
+  },
+  "tags": {
+    "logo": "Logotype",
+    "identity": "Identity",
+    "react": "React",
+    "typescript": "TypeScript",
+    "javascript": "JavaScript",
+    "nodejs": "Node.js",
+    "graphql": "GraphQL",
+    "nextjs": "Next.js",
+    "tailwind": "Tailwind CSS",
+    "web": "Web",
+    "mobile": "Mobile",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "fullstack": "Full Stack",
+    "design": "Design",
+    "api": "API",
+    "database": "Database"
+  },
+  "tags": {
+    "painting": "Malba",
+    "canvas": "Plátno",
+    "installation": "Instalace",
+    "performance": "Performance"
+  }
+}
