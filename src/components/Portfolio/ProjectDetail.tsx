@@ -189,7 +189,7 @@ export const ProjectDetail = () => {
     <>
     {project && (
       <PageMeta 
-        title={`${project.title} | Portfolio | John Doe`}
+        title={`${project.title} | ${t('navigation.portfolio')} | ${t('common.title')}`}
         description={project.description}
         image={project.image}
         url={`https://dev2.vrana.org/#/${i18n.language}/portfolio/${project.slug}`}
