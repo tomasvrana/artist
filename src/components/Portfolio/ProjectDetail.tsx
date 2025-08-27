@@ -102,8 +102,9 @@ function CurrencySelect({ array }: { array: CurrencyItem[] }) {
   const { value, setValue } = useCurrency();
 
   const current = array.find((el) => el.currency === value);
-  console.log("CurrencySelect array:", array);
-  console.log("CurrencySelect current:", current);
+  console.log("array:", array);
+  console.log("value:", value);
+  console.log("current:", current);
 
   if (!current) {
     return (
