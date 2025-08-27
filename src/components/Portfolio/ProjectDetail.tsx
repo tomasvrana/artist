@@ -84,10 +84,11 @@ margin:50px auto 0 auto;
   }
 }
 `;
+
 type CurrencyItem = {
   currency: string;
   value: number;
-  old?: number;
+  old: number;
 }
 
 function formatVal(val){
@@ -99,7 +100,16 @@ function formatVal(val){
 function CurrencySelect({ array }: { array: CurrencyItem[] }) {
   const { t, i18n } = useTranslation();
   const { value, setValue } = useCurrency();
+
   const current = array.find((el) => el.currency === value);
+
+  if (!current) {
+    return (
+      <div className="price-details">
+        <p>{t('portfolio.price')}: <strong className="price">-</strong></p>
+      </div>
+    );
+  }
 
   return (
     <div className="price-details">
@@ -123,7 +133,6 @@ function CurrencySelect({ array }: { array: CurrencyItem[] }) {
     </div>
   );
 }
-
 export const ProjectDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const { t, i18n } = useTranslation();
