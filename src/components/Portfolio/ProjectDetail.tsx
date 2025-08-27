@@ -83,6 +83,11 @@ margin:50px auto 0 auto;
   }
 }
 `;
+type CurrencyItem = {
+  currency: string;
+  value: number;
+  old?: number;
+}
 
 function formatVal(val){
   const { value, setValue } = useCurrency();
@@ -90,7 +95,7 @@ function formatVal(val){
 }
 
 
-function CurrencySelect({ array }: { array: string[] }) {
+function CurrencySelect({ array }: { array: CurrencyItem[] }) {
   const { t, i18n } = useTranslation();
   const { value, setValue } = useCurrency();
   const current = array.find((el) => el.currency === value);
