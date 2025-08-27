@@ -28,6 +28,12 @@ const projectModules = import.meta.glob('/src/content/projects/**/*.md', {
   import: 'default'
 });
 
+type PriceItem = {
+  currency: string;
+  value: number;
+  old?: number;
+};
+
 export async function getAllProjects(locale: string): Promise<Project[]> {
   const projects: Project[] = [];
   
@@ -52,7 +58,7 @@ export async function getAllProjects(locale: string): Promise<Project[]> {
         description: data.description || '',
         date: new Date(data.date),
         tags: Array.isArray(data.tags) ? data.tags : [],
-        price: data.price,
+        price: Array.isArray(data.price) ? data.price as PriceItem[] : [],
         thumb: data.thumb,
         location: data.location,
         media: data.media,
@@ -96,7 +102,7 @@ export async function getProjectBySlug(slug: string, locale: string): Promise<Pr
       description: data.description || '',
       date: data.date || new Date().toISOString(),
       tags: Array.isArray(data.tags) ? data.tags : [],
-      price: data.price,
+      price: Array.isArray(data.price) ? data.price as PriceItem[] : [],
       thumb: data.thumb,
       location: data.location,
       media: data.media,
