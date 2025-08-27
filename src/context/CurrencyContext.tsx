@@ -10,7 +10,7 @@ const CurrencyContext = createContext<CurrencyContextType | undefined>(undefined
 
 export const CurrencyProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [value, setValue] = useState(() => {
-    return localStorage.getItem("myValue") || "default";
+    return localStorage.getItem("myValue") || "CZK";
   });
 
   useEffect(() => {
