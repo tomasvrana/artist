@@ -101,10 +101,18 @@ function CurrencySelect({ array }: { array: CurrencyItem[] }) {
   const { t, i18n } = useTranslation();
   const { value, setValue } = useCurrency();
 
+  if(value == 'default'){
+    setValue('CZK');
+  }
+
   const current = array.find((el) => el.currency === value);
+
+
   console.log("array:", array);
   console.log("value:", value);
-  console.log("currentX:", current);
+  console.log("currentssX:", current);
+
+
 
   if (!current) {
     return (
