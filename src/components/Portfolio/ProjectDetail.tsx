@@ -8,6 +8,7 @@ import Content from '../Content';
 import Status from '../Status';
 import Label from '../Label';
 import { CurrencyProvider, useCurrency } from "../../context/CurrencyContext";
+import { PageMeta } from '../PageMeta';
 
 const Detail = styled.article`
 margin:50px auto 0 auto;
@@ -165,6 +166,15 @@ export const ProjectDetail = () => {
   }
 
   return (
+    <>
+    {project && (
+      <PageMeta 
+        title={`${project.title} | Portfolio | John Doe`}
+        description={project.description}
+        image={project.image}
+        url={`https://dev2.vrana.org/#/${i18n.language}/portfolio/${project.slug}`}
+      />
+    )}
     <CurrencyProvider>
       <Detail className="project-detail">
         <Content>
@@ -240,5 +250,6 @@ export const ProjectDetail = () => {
         </Content>
       </Detail>
     </CurrencyProvider>
+    </>
   );
 };

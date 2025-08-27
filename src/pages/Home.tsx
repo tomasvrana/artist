@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { usePageContent } from '../hooks/usePageContent';
+import { PageMeta } from '../components/PageMeta';
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -13,18 +14,24 @@ export const Home = () => {
   }
 
   return (
-    <div className="home">
-      <section className="hero">
-        <h1>{pageContent.title}</h1>
-        <p>{pageContent.subtitle}</p>
-        <button onClick={() => navigate('/portfolio')}>
-          {pageContent.cta}
-        </button>
-      </section>
-      
-      <section className="content">
-        <div dangerouslySetInnerHTML={{ __html: pageContent.content }} />
-      </section>
-    </div>
+    <>
+      <PageMeta 
+        title={`${t('common.title')}`}
+        description={`${t('common.title')}`}
+      />
+      <div className="home">
+        <section className="hero">
+          <h1>{pageContent.title}</h1>
+          <p>{pageContent.subtitle}</p>
+          <button onClick={() => navigate('/portfolio')}>
+            {pageContent.cta}
+          </button>
+        </section>
+        
+        <section className="content">
+          <div dangerouslySetInnerHTML={{ __html: pageContent.content }} />
+        </section>
+      </div>
+    </>
   );
 };
