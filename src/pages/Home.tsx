@@ -5,19 +5,19 @@ import { usePageContent } from '../hooks/usePageContent';
 import { PageMeta } from '../components/PageMeta';
 import GallerySlideshow from '../components/Slider'
 import styled from 'styled-components';
-import { ClassSlugProvider, useClassSlug } from "../context/ClassSlugContext";
 
 const Hero = styled.div`
 color:white;
 .hero{
   top:50%;
   position:absolute;
-  width:100%;
+  width:90%;
   left:0;
-  z-index:999;
+  z-index:80;
   margin-top:-250px;
   text-transform:uppercase;
   letter-spacing:.2em;
+  padding:0 5%;
   h1{
     font-size:800%;
     letter-spacing:.02em;
@@ -25,6 +25,16 @@ color:white;
     max-width:1400px;
     line-height:1.2;
     margin:auto;
+    @media screen and (max-width:1400px) {
+      font-size:500%;
+    }
+    @media screen and (max-width:1000px) {
+      font-size:350%;
+    }
+    @media screen and (max-width:700px) {
+      font-size:200%;
+    }
+    
   }
   button{
     font-size:100%;
@@ -56,19 +66,17 @@ export const Home = () => {
         title={`${t('common.title')}`}
         description={`${t('common.title')}`}
       />
-      <ClassSlugProvider>
-        <Hero className="home text-center">
-          <GallerySlideshow gallery={pageContent.gallery} interval={4000}  />
-          <section className="hero">
+      <Hero className="home text-center">
+        <GallerySlideshow gallery={pageContent.gallery} interval={4000}  />
+        <section className="hero">
 
-            <h1>{pageContent.title}</h1>
-            <p>{pageContent.subtitle}</p>
-            <button onClick={() => navigate('/portfolio')}>
-              {pageContent.cta}
-            </button>
-          </section>
-        </Hero>
-      </ClassSlugProvider>
+          <h1>{pageContent.title}</h1>
+          <p>{pageContent.subtitle}</p>
+          <button onClick={() => navigate('/portfolio')}>
+            {pageContent.cta}
+          </button>
+        </section>
+      </Hero>
     </>
   );
 };

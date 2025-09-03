@@ -11,6 +11,7 @@ const ProjectsGrid = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 1rem;
   margin:auto;
+
 `;
 
 const ProjectCard = styled.article<{ $rotx?: number; $roty?: number; }>`
@@ -21,7 +22,7 @@ const ProjectCard = styled.article<{ $rotx?: number; $roty?: number; }>`
   perspective-origin: 150% 150%;
   transform-style: preserve-3d;
   perspective:300px;
-  width:360px;
+  width:100%;
   
   .thumbnail{
     transform:rotateX(${props => props.$rotx}deg) rotateY(${props => props.$roty}deg);
