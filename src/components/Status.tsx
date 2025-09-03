@@ -19,7 +19,7 @@ p {
     width:0;
     height:0;
     position: absolute;
-    z-index:999;
+    z-index:80;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 7px solid #0f0;

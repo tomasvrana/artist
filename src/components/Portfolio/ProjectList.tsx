@@ -7,11 +7,13 @@ import type { Project } from '../../types/project';
 import { useTranslatedTags } from '../../hooks/useTranslatedTags';
 
 const ProjectsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 1rem;
-  margin:auto;
-
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+gap: 3rem 1rem;
+margin:auto;
+@media screen and (max-width:1000px){
+gap:3rem 0;
+}
 `;
 
 const ProjectCard = styled.article<{ $rotx?: number; $roty?: number; }>`

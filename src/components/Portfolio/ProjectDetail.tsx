@@ -116,14 +116,7 @@ function CurrencySelect({ array }: { array: CurrencyItem[] }) {
 
   return (
     <div className="price-details">
-      {current.old ? (
-        <div>
-          <p><Label>{t('portfolio.oldprice')}</Label>: <span className="oldprice">&nbsp;{formatVal(current.old)}&nbsp;</span> {value}</p>
-          <p><Label>{t('portfolio.sale')}</Label>:<br /><strong className="price">{formatVal(current.value)}</strong> {value}</p>
-        </div>
-      ) : (
-        <p>{t('portfolio.price')}: <strong className="price">{current.value}</strong> {value}</p>
-      )}
+      <p>{t('portfolio.price')}:<br /><strong className="price">{current.value}</strong> {value}</p>
       <p>&nbsp;</p>
       <p>
         <Label>{t('portfolio.selectcurrency')}</Label><br />

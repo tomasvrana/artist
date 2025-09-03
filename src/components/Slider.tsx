@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
-import { ClassSlugProvider, useClassSlug } from "../context/ClassSlugContext";
 
 // animace prolínání
 const fade = keyframes`
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from { 
+    opacity: 0;
+  }
+  to { 
+    opacity: 1;
+  }
 `;
 
 const SlideshowWrapper = styled.div`

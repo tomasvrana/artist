@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 
 const FooterWrap = styled.footer`
-padding:0 40px;
 
 .wrap{
   font-size:70%;
@@ -11,10 +10,10 @@ padding:0 40px;
   display: flex;
   letter-spacing:.1em;
   justify-content:space-between;
-  gap: 1rem;
-  width:100%;
+  gap: 0;
+  width:92%;
   margin:50px 0 5px 0;
-  padding:20px 0;
+  padding:20px 4%;
   .made{
     text-align:right;
   }
