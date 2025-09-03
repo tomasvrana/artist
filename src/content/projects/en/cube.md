@@ -8,7 +8,7 @@ height: 2500
 media: Ocel, dřevo
 description: 
 location: Opava
-tags: ['instalation', 'removed']
+tags: ['installation', 'removed']
 date: '2011-07-15'
 slug: 'cube'
 thumb: /images/cube/mini.jpg

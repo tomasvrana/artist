@@ -17,7 +17,7 @@ year: 2020
 width: 50
 height: 90
 sliderheight: 690
-tags: ['instalation', 'public']
+tags: ['installation', 'public']
 date: '2021-07-15'
 slug: 'konevmen'
 available: 1

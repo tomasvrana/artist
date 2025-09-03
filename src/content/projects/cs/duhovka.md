@@ -11,7 +11,7 @@ height: 2500
 media: Barva, folie
 description: 
 location: Opava, CZ
-tags: ['instalation', 'removed']
+tags: ['installation', 'removed']
 date: '2012-07-15'
 slug: 'duhovka'
 thumb: /images/duhovka/mini.jpg

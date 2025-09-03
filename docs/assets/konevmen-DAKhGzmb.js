@@ -1,11 +1,11 @@
-const e=`---
+const n=`---
 
 title: Konevmen
 type: Installation
 parent: /spaces/
-cooperation: Vaclav Minarik, Martina Pavelkova
+cooperation: Václav Minařík, Martina Pavelková
 back: Back
-media: Paint, steel, concrete
+media: Barva, beton, ocel
 price:
   - currency: "CZK"
     old: 80000
@@ -17,7 +17,7 @@ year: 2020
 width: 50
 height: 90
 sliderheight: 690
-tags: ['instalation', 'public']
+tags: ['installation', 'public']
 date: '2021-07-15'
 slug: 'konevmen'
 available: 1
@@ -47,9 +47,9 @@ gallery:
   - image: /images/konevmen/21.jpg
   - image: /images/konevmen/22.jpg
 ---
-Konevmen (singular Konevman. Clonev for friends) is an art installation created as part of Landscape festival 2020 in Prague 3, Zizkov.
+Koněvmen (jednotné číslo Koněvman, domácky taky Kloněv nebo Polokoněv) je umelěckou instalací vzniklou v rámci Landscape festival 2020 v Praze na Žižkově.
 
-It's made of small replicas of a statue from the Ivan Stepanovic Konev memorial which has been removed for being repeatedly vandalised. 
+Jsou to metrové repliky sochy z pomníku Ivana Stěpanoviče Koněva, která byla odstraněna kvůli opakované vandalizaci. 
 
-Artistic threesum to the situation and circumstances following before and after removal of a Ivan Stepanovic Statue. This was moved to safe house because of being constantly vandalised with paint and the memorial became demontration place for both sides of the removal conflict. Escalation of absurd accusations, blackmailing, diplomatic rows climaxed with deportation of two russian diplomats (7. 6. 2020) which were supposed to take part in correction of inconvenient people linked to the removal of the statue made in 1980. 
-`;export{e as default};
+Umělecká trojreakce na situaci a okolnosti provázející odstranění sochy Ivana Stěpanoviče Koněva. Ta byla přemístěna do bezpečného místa, protože docházelo k její opakované dehonestaci barvou a pomník se stal poutním místem odpůrců i zastánců odstranění sochy. Eskalace absurdit, výhrůžek, diplomatických přestřelek vyvrcholila vyhoštěním dvou ruských diplomatů (7. 6. 2020), kteří se měli podílet na korekci nepohodlných osob spojených s odstraněním sochy z roku 1980. 
+`;export{n as default};

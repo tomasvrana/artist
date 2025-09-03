@@ -9,7 +9,7 @@ media: Ocel, dřevo
 cooperation: Václav Minařík
 description: 
 location: Opava
-tags: ['instalation', 'removed']
+tags: ['installation', 'removed']
 date: '2011-07-15'
 slug: 'cube'
 thumb: /images/cube/mini.jpg

@@ -9,7 +9,7 @@ media: Paint, steel, concrete
 year: 2019
 height: 5000
 location: Ostrava, CZ
-tags: ['instalation', 'removed']
+tags: ['installation', 'removed']
 date: '2020-07-15'
 slug: 'kolos'
 available: 3

@@ -1,19 +1,19 @@
-const n=`---
+const a=`---
 
-title: Rainbow ball
+title: Duhovka
 type: Instalation
 parent: /spaces/
 back: Back
-cooperation: Vaclav Minarik
+cooperation: Václav Minařík
 year: 2019
 width: 2500
 height: 2500
-media: Paint, film
+media: Barva, folie
 description: 
 location: Opava, CZ
-tags: ['instalation', 'removed']
+tags: ['installation', 'removed']
 date: '2012-07-15'
-slug: 'rainbowball'
+slug: 'duhovka'
 thumb: /images/duhovka/mini.jpg
 available: 3
 translationKey: 'rainbowball'
@@ -22,4 +22,4 @@ gallery:
 ---
 ...
 
-`;export{n as default};
+`;export{a as default};

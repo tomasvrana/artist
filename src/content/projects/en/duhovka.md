@@ -11,7 +11,7 @@ height: 2500
 media: Paint, film
 description: 
 location: Opava, CZ
-tags: ['instalation', 'removed']
+tags: ['installation', 'removed']
 date: '2012-07-15'
 slug: 'rainbowball'
 thumb: /images/duhovka/mini.jpg
