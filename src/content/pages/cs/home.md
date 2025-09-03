@@ -1,5 +1,5 @@
 ---
-title: Vítejte ve světe totální pitomosti
+title: Vítejte ve světě totálního nesmyslu
 subtitle: Malířství a úprava prostoru
 cta: Vidět víc
 gallery:
