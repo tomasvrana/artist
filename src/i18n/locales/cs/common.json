@@ -5,7 +5,7 @@
     "contact": "Kontakt",
     "shop": "Obchod",
     "events": "Akce",
-    "portfolio": "Portfolio"
+    "portfolio": "Galerie"
   },
   "hero": {
     "title": "Frontend Developer",
@@ -20,7 +20,7 @@
     "description": "Jsem frontend vývojář..."
   },
   "portfolio": {
-    "title": "Moje projekty",
+    "title": "Galerie",
     "allProjects": "Všechny",
     "available": "Skladem",
     "sold": "Prodáno",

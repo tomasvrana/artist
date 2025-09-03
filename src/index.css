@@ -102,6 +102,10 @@ nav {
   color: #333;
 }
 
+.home .nav-links a:hover {
+  color:white;
+}
+
 .nav-links a.active {
   color: #000;
   font-weight: 600;
