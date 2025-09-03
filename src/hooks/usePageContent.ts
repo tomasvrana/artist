@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { marked } from 'marked';
 import { useTranslation } from 'react-i18next';
+import yaml from "js-yaml";
 
 interface PageContent {
   title: string;
@@ -10,32 +11,26 @@ interface PageContent {
 
 // Vlastní frontmatter parser (stejný jako v markdown.ts)
 function parseFrontmatter(content: string) {
-  const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
-  const match = content.match(frontmatterRegex);
-  
-  if (!match) {
+  // najdeme první blok oddělený ---
+  if (!content.startsWith("---")) {
     return { data: {}, content };
   }
-  
-  const [, frontmatter, mainContent] = match;
-  const data: any = {};
-  
-  frontmatter.split('\n').forEach(line => {
-    const colonIndex = line.indexOf(':');
-    if (colonIndex > 0) {
-      const key = line.slice(0, colonIndex).trim();
-      let value = line.slice(colonIndex + 1).trim();
-      
-      if ((value.startsWith('"') && value.endsWith('"')) || 
-          (value.startsWith("'") && value.endsWith("'"))) {
-        value = value.slice(1, -1);
-      }
-      
-      data[key] = value;
-    }
-  });
-  
-  return { data, content: mainContent };
+
+  const end = content.indexOf("\n---", 3);
+  if (end === -1) {
+    return { data: {}, content };
+  }
+
+  const frontmatter = content.slice(3, end).trim();
+  const mainContent = content.slice(end + 4).trim();
+
+  try {
+    const data = yaml.load(frontmatter) as any;
+    return { data, content: mainContent };
+  } catch (error) {
+    console.error("Error parsing frontmatter:", error);
+    return { data: {}, content: mainContent };
+  }
 }
 
 const pageModules = import.meta.glob('/src/content/pages/**/*.md', { 

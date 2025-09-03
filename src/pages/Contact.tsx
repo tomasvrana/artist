@@ -19,7 +19,7 @@ export const Contact = () => {
         title={`${t('navigation.contact')} - ${t('common.title')}`}
         description={`${t('navigation.contact')} - ${t('common.title')}`}
       />
-      <div>
+      <div className="content contact">
         <Heading>{pageContent.title}</Heading>
         <Content>
           <div dangerouslySetInnerHTML={{ __html: pageContent.content }} />

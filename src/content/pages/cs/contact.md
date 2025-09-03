@@ -1,22 +1,22 @@
 ---
-title: kon In Touch
+title: Spojení
+links:
+  - url: https://facebook.com/tomasvrana
+    title: Facebook
+  - url: https://instagram.com/tomasvrana
+    title: Instagram
+  - url: https://behance.net/tomasvrana
+    title: Behance
+  - url: https://linkedin.com/in/tomasvrana
+    title: LinkedIn
+    
 ---
+Způsoby, jak kontaktovat Toma, zahrnují psaní jednoduché zprávy prostřednictvím níže uvedených sociálních sítí. Můžete také napsat podrobnější e-mail na jeho adresu: tomas@vrana.org. 
 
-# Let's Work Together
+Pokud dáváte přednost osobnějšímu a hlasovému kontaktu, můžete zavolat na telefonní číslo<br>
+**+420608028482** a počkat na odpověď od obsluhy.
 
-I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!
-
-## Contact Information
-
-- **Email**: john.doe@example.com
-- **LinkedIn**: [linkedin.com/in/johndoe](https://linkedin.com/in/johndoe)
-- **GitHub**: [github.com/johndoe](https://github.com/johndoe)
-
-## Location
-
-Based in Prague, Czech Republic  
-Available for remote work worldwide
-
-## Response Time
-
-I typically respond within 24-48 hours. For urgent matters, please mention it in your message.
+## Záminky ke kontaktu
+- Kontaktujte Toma, pokud máte i mírný zájem o koupi některého z dostupných uměleckých děl.
+- Můžete se na něj obrátit také v případě, že máte vlastní téma, které byste chtěli parodovat.
+- Kontaktujte ho okamžitě, pokud máte nějaké další zajímavé nápady, koncepty nebo témata, která byste považovali za důležitá pro uchování pro budoucí generace jako malbu, mural nebo prostorové ladění.

@@ -104,16 +104,8 @@ function CurrencySelect({ array }: { array: CurrencyItem[] }) {
   if(value == 'default'){
     setValue('CZK');
   }
-
   const current = array.find((el) => el.currency === value);
-
-
-  console.log("array:", array);
-  console.log("value:", value);
-  console.log("currentssX:", current);
-
-
-
+  
   if (!current) {
     return (
       <div className="price-details">

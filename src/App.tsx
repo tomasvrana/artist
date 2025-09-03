@@ -1,14 +1,12 @@
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Layout } from './components/Layout';
+import { Home } from './pages/Home';
+import { About } from './pages/About';
+import { Portfolio } from './pages/Portfolio';
+import { Contact } from './pages/Contact';
 import { Project } from './pages/Project';
 import { Suspense } from 'react';
-import { 
-  Home, 
-  Portfolio, 
-  About, 
-  Contact
-} from './pages';
 
 const AppRoutes = () => {
   const { i18n } = useTranslation();
@@ -29,14 +27,13 @@ const AppRoutes = () => {
           <Route path="contact" element={<Contact />} />
         </Route>
       ))}
-      
     </Routes>
   );
 };
 
 export const App = () => {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div className='text-center'>Loading...</div>}>
       <HashRouter>
         <AppRoutes />
       </HashRouter>

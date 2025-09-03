@@ -12,17 +12,10 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': '/src'
-    }
+      buffer: 'buffer',
+    },
   },
   optimizeDeps: {
-    include: [
-      '@reduxjs/toolkit',
-      'react-redux',
-      'firebase/app',
-      'firebase/auth',
-      'firebase/firestore'
-    ],
-    force: true
-  }
+    include: ['buffer'],
+  },
 })

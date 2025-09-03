@@ -1,21 +1,27 @@
 ---
 
 title: Poslíček
-type: Obraz
+type: Painting
 parent: /images/
-back: Zpět
-media: Akryl, plátno
+back: Back
+media: Balakryl na plátně
 width: 130
 height: 120
 year: 2012
 description: 
 location: Soukromá sbírka, Ostrava
-available: true
-tags: ['painting']
-date: '2025-07-15'
-slug: 'projekt'
-translationKey: 'project'
+available: 0
+tags: ['painting', 'sold']
+date: '2012-07-15'
+thumb: /images/messenger/mini.jpg
+slug: 'poslicek'
+translationKey: 'messenger'
+image: /images/messenger/0.jpg
 gallery:
   - image: /images/messenger/1.jpg
+  - image: /images/messenger/2.jpg
+  - image: /images/messenger/3.jpg
   
 ---
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+

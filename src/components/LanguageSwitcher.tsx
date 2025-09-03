@@ -38,7 +38,7 @@ export const LanguageSwitcher = () => {
             className={i18n.language === 'en' ? 'active' : ''}
             aria-label="Switch to English"
         >
-            EN
+            En
         </button>
       }
       {(i18n.language === 'en') &&
@@ -47,7 +47,7 @@ export const LanguageSwitcher = () => {
             className={i18n.language === 'cs' ? 'active' : ''}
             aria-label="Přepnout do češtiny"
         >
-            CS
+            CZ
         </button>
         }
     </div>

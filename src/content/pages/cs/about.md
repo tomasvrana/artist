@@ -1,26 +1,31 @@
 ---
-title: cz Me
-skills: React, TypeScript, GraphQL, Node.js, Next.js
+title: Informace
+links:
+  - url: https://facebook.com/tomasvrana
+    title: Facebook
+  - url: https://instagram.com/tomasvrana
+    title: Instagram
+  - url: https://behance.net/tomasvrana
+    title: Behance
+  - url: https://linkedin.com/in/tomasvrana
+    title: LinkedIn
 ---
+> Tom je umělec širokého záběru s nadlidskou vášní pro témata, která narušují kontext, přičemž důsledně udržuje čistou rovnováhu mezi absurdností a základními formami funkčnosti a konceptem parodie.
 
-# About Me
+## Nabídka
+### Obrazy na rámované plátno
+Můžete si zakoupit jakékoli dostupné umělecké dílo nebo si objednat vlastní nápad či téma, které bude zpracováno a vyleštěno do dokonalé nesmyslnosti.
 
-I'm a frontend developer with over 5 years of experience building web applications. My journey started with simple HTML and CSS, and has evolved into creating complex, scalable applications using modern JavaScript frameworks.
+### Murály
+Oživte svůj veřejný nebo soukromý prostor murály navrženými a malovanými specificky podle vašich potřeb a potřeb prostoru.
 
-## My Journey
+## Nákup
+### Sleva 50 %
+Využijte časově omezenou nabídku poloviční ceny jakékoli dostupné položky.
 
-I discovered my passion for web development during university, where I studied Computer Science. Since then, I've worked on various projects ranging from small business websites to large-scale enterprise applications.
+### Možnosti platby
+Nákup jednorázovým převodem za plnou cenu s okamžitým právem na vlastnictví
+Leasing - TV také podporuje leasingovou smlouvu přizpůsobenou specifickým potřebám zákazníka
 
-## Experience
-
-- **Senior Frontend Developer** at TechCorp (2021-Present)
-- **Frontend Developer** at WebStudio (2019-2021)
-- **Junior Developer** at StartupXYZ (2018-2019)
-
-## Education
-
-- **Bachelor of Computer Science** - University of Technology (2014-2018)
-
-## What Drives Me
-
-I believe in creating web experiences that are not just functional, but delightful to use. Every project is an opportunity to learn something new and push the boundaries of what's possible on the web.
+### Dodání
+Vzhledem k vysoké křehkosti většiny položek je dodání nejlépe svěřit našim vlastním službám.
