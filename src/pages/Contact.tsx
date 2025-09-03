@@ -10,7 +10,7 @@ export const Contact = () => {
   const pageContent = usePageContent('contact');
 
   if (!pageContent) {
-    return <div>Loading...</div>;
+    return <div className='text-center'><p>{t('common.loading')} ...</p></div>;
   }
 
   return (

@@ -9,7 +9,7 @@ export const About = () => {
   const pageContent = usePageContent('about');
 
   if (!pageContent) {
-    return <div>Loading...</div>;
+    return <div className='text-center'><p>{t('common.loading')} ...</p></div>;
   }
 
   return (

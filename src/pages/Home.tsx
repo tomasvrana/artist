@@ -52,7 +52,8 @@ color:white;
 `;
 
 export const Home = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language;
   const navigate = useNavigate();
   const pageContent = usePageContent('home');
 
@@ -72,7 +73,7 @@ export const Home = () => {
 
           <h1>{pageContent.title}</h1>
           <p>{pageContent.subtitle}</p>
-          <button onClick={() => navigate('/portfolio')}>
+          <button onClick={() => navigate('/'+currentLang+'/portfolio')}>
             {pageContent.cta}
           </button>
         </section>
