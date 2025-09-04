@@ -1,5 +1,5 @@
 ---
-title: Escalation
+title: Eskalace
 type: Painting
 currency: "CZK"
 category: "skincare"
@@ -22,7 +22,7 @@ available: 1
 tags: ['painting', 'available']
 date: '2025-07-03'
 thumb: /images/escalace/mini.jpg
-slug: 'escalation'
+slug: 'eskalace'
 translationKey: 'escalation'
 image: /images/escalace/0.jpg
 gallery:

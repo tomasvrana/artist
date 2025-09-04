@@ -1,5 +1,5 @@
 ---
-title: Cloud turn
+title: Obrat mraku
 type: Painting
 parent: /images/
 back: Back
@@ -20,7 +20,7 @@ available: 1
 thumb: /images/cloud/mini.jpg
 tags: ['painting', 'available']
 date: '2025-07-05'
-slug: 'cloud'
+slug: 'mrak'
 translationKey: 'cloud'
 gallery:
   - image: /images/cloud/0.jpg

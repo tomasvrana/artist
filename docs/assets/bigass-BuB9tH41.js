@@ -1,9 +1,9 @@
----
-title: Macek
+const n=`---
+title: Big ass
 type: Painting
 parent: /images/
 back: Back
-media: Akryl na plátně
+media: Acryl on canvas
 price:
   - currency: "CZK"
     old: 20000
@@ -20,9 +20,9 @@ available: 1
 thumb: /images/bigass/mini.jpg
 tags: ['painting', 'available']
 date: '2025-07-10'
-slug: 'macek'
+slug: 'bigass'
 translationKey: 'bigass'
 gallery:
   - image: /images/bigass/0.jpg
 ---
-...
+...`;export{n as default};

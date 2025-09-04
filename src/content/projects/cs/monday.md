@@ -1,5 +1,5 @@
 ---
-title: Monday
+title: Pondělí
 type: Painting
 parent: /images/
 back: Back

@@ -1,5 +1,5 @@
 ---
-title: Heart attack
+title: Srdeční zástava
 type: Painting
 parent: /images/
 back: Back
@@ -13,7 +13,7 @@ tags: ['painting', 'public']
 date: '2024-07-15'
 available: 2
 thumb: /images/heart/0.jpg
-slug: 'heartattack'
+slug: 'srdce'
 translationKey: 'heartattack'
 gallery:
   - image: /images/heart/1.jpg

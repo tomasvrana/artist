@@ -2,7 +2,7 @@ const n=`---
 title: Cube
 type: Instalation
 parent: /spaces/
-year: 2019
+year: 2011
 width: 2500
 height: 2500
 media: Ocel, dřevo

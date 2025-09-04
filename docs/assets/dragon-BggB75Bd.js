@@ -1,5 +1,5 @@
 const n=`---
-title: Cloud turn
+title: Drak
 type: Painting
 parent: /images/
 back: Back
@@ -17,13 +17,13 @@ height: 100
 description: 
 location: Opava, CZ
 available: 1
-thumb: /images/cloud/mini.jpg
 tags: ['painting', 'available']
-date: '2025-07-05'
-slug: 'cloud'
-translationKey: 'cloud'
+date: '2025-07-01'
+thumb: /images/dragon/mini.jpg
+slug: 'drak'
+translationKey: 'dragon'
 gallery:
-  - image: /images/cloud/0.jpg
+  - image: /images/dragon/0.jpg
 ---
 ...
 

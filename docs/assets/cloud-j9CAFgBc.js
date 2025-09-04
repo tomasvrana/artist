@@ -1,5 +1,5 @@
----
-title: Drak
+const n=`---
+title: Obrat mraku
 type: Painting
 parent: /images/
 back: Back
@@ -17,13 +17,14 @@ height: 100
 description: 
 location: Opava, CZ
 available: 1
+thumb: /images/cloud/mini.jpg
 tags: ['painting', 'available']
-date: '2025-07-01'
-thumb: /images/dragon/mini.jpg
-slug: 'drak'
-translationKey: 'dragon'
+date: '2025-07-05'
+slug: 'mrak'
+translationKey: 'cloud'
 gallery:
-  - image: /images/dragon/0.jpg
+  - image: /images/cloud/0.jpg
 ---
 ...
 
+`;export{n as default};
