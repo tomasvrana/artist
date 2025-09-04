@@ -23,9 +23,6 @@ Enhance your public or private space with murals taylored and painted specifical
 
 ## Purchase
 
-### 50% Sale
-Use time limited offer of half pricing of any available listing.
-
 ### Payment options
 - Buying with single full price transfer and immediate right ownership
 - Lease - TV also supports lease agreement made to measure specific customer needs 

@@ -20,8 +20,6 @@ Můžete si zakoupit jakékoli dostupné umělecké dílo nebo si objednat vlast
 Oživte svůj veřejný nebo soukromý prostor murály navrženými a malovanými specificky podle vašich potřeb a potřeb prostoru.
 
 ## Nákup
-### Sleva 50 %
-Využijte časově omezenou nabídku poloviční ceny jakékoli dostupné položky.
 
 ### Možnosti platby
 Nákup jednorázovým převodem za plnou cenu s okamžitým právem na vlastnictví
