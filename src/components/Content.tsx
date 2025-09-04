@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Wrapper = styled.div`
   max-width:1200px;
-  margin:0px auto 150px auto;
+  margin:0px auto 50px auto;
 `;
 
 const Content = (props) => {

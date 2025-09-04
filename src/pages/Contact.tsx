@@ -4,6 +4,7 @@ import { usePageContent } from '../hooks/usePageContent';
 import Heading from '../components/Heading';
 import Content from '../components/Content';
 import { PageMeta } from '../components/PageMeta';
+import { Link } from 'react-router-dom';
 
 export const Contact = () => {
   const { t } = useTranslation();
@@ -24,6 +25,11 @@ export const Contact = () => {
         <Content>
           <div dangerouslySetInnerHTML={{ __html: pageContent.content }} />
         </Content>
+        <ul className='networks'>
+          {pageContent.links.map((link, i) => (
+            <li><Link to={link.url}>{link.title}</Link></li>
+          ))}
+        </ul>
       </div>
     </>
   );

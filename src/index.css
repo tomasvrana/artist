@@ -187,7 +187,28 @@ main {
 }
 .content.about,.content.contact{
   max-width: 800px;
+  margin-bottom: 100px;
 }
+.content.contact ul{
+  padding-left: 15px;
+}
+.content.contact ul.networks{
+  padding-left: 0px;
+  list-style-type: none;
+  display: flex;
+  width:100%;
+    justify-content:flex-start  ;
+
+}
+.content.contact ul.networks li+li{
+  border-left: 1px solid #555;
+}
+.content.contact ul.networks li a{
+  padding: 1rem 1rem 1rem 1rem;
+  text-decoration: none;
+  
+}
+
 
 .back-button{
   background:transparent;

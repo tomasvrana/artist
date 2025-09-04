@@ -7,8 +7,7 @@ links:
     title: Instagram
   - url: https://behance.net/tomasvrana
     title: Behance
-  - url: https://linkedin.com/in/tomasvrana
-    title: LinkedIn
+
     
 ---
 Způsoby, jak kontaktovat Toma, zahrnují psaní jednoduché zprávy prostřednictvím níže uvedených sociálních sítí. Můžete také napsat podrobnější e-mail na jeho adresu: tomas@vrana.org. 
