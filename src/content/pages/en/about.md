@@ -1,5 +1,5 @@
 ---
-title: About him
+title: About TV
 links:
   - url: https://facebook.com/tomasvrana
     title: Facebook
@@ -10,7 +10,6 @@ links:
   - url: https://linkedin.com/in/tomasvrana
     title: LinkedIn
 ---
-## About
 > Tom is a wide scope artist with an inhuman passion for context breaking topics while strictly maintaining the sheer balance between ridiculousness and fundamental forms of funk and the concept of parody.   
 
 ## Offer
