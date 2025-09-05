@@ -1,11 +1,9 @@
 const n=`---
-
-title: Hospital
-subtitle: Maybe school|Or prison
+title: Obratník mraka
 type: Painting
 parent: /images/
 back: Back
-media: Acryl on canvas
+media: Akryl na plátně
 price:
   - currency: "CZK"
     old: 30000
@@ -13,21 +11,19 @@ price:
   - currency: "EUR"
     old: 1230
     value: 615
-year: 2021
+year: 2025
 width: 175
 height: 100
 description: 
 location: Opava, CZ
 available: 1
+thumb: /images/cloud/mini.jpg
 tags: ['painting', 'available']
-date: '2021-07-10'
-thumb: /images/hospital/mini.jpg
-slug: 'hospital'
-translationKey: 'hospital'
-image: /images/hospital/0.jpg
+date: '2025-07-05'
+slug: 'mrak'
+translationKey: 'cloud'
 gallery:
-  - image: /images/hospital/1.jpg
-  
+  - image: /images/cloud/0.jpg
 ---
 ...
 

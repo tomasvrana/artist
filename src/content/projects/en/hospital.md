@@ -1,6 +1,6 @@
 ---
 
-title: Hospital
+title: Hostpital
 subtitle: Maybe school|Or prison
 type: Painting
 parent: /images/
@@ -22,7 +22,7 @@ available: 1
 tags: ['painting', 'available']
 date: '2021-07-10'
 thumb: /images/hospital/mini.jpg
-slug: 'hospital'
+slug: 'hostpital'
 translationKey: 'hospital'
 image: /images/hospital/0.jpg
 gallery:

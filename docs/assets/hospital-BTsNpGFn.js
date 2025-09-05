@@ -1,9 +1,11 @@
 const n=`---
-title: Obrat mraku
+
+title: Hostpital
+subtitle: Maybe school|Or prison
 type: Painting
 parent: /images/
 back: Back
-media: Akryl na plátně
+media: Acryl on canvas
 price:
   - currency: "CZK"
     old: 30000
@@ -11,19 +13,21 @@ price:
   - currency: "EUR"
     old: 1230
     value: 615
-year: 2025
+year: 2021
 width: 175
 height: 100
 description: 
 location: Opava, CZ
 available: 1
-thumb: /images/cloud/mini.jpg
 tags: ['painting', 'available']
-date: '2025-07-05'
-slug: 'mrak'
-translationKey: 'cloud'
+date: '2021-07-10'
+thumb: /images/hospital/mini.jpg
+slug: 'hostpital'
+translationKey: 'hospital'
+image: /images/hospital/0.jpg
 gallery:
-  - image: /images/cloud/0.jpg
+  - image: /images/hospital/1.jpg
+  
 ---
 ...
 

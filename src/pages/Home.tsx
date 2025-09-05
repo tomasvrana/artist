@@ -18,6 +18,13 @@ color:white;
   text-transform:uppercase;
   letter-spacing:.2em;
   padding:0 5%;
+  @media screen and (max-width:1000px) {
+    margin-top:-50px;
+  }
+  @media screen and (max-width:700px) {
+    margin-top:0px;
+  }
+    
   h1{
     font-size:800%;
     letter-spacing:.02em;

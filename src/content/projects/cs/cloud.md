@@ -1,5 +1,5 @@
 ---
-title: Obrat mraku
+title: Obratník mraka
 type: Painting
 parent: /images/
 back: Back
