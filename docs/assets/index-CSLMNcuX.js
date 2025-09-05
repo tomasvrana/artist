@@ -182,6 +182,10 @@ z-index: 99;
 
 .wrap{
   font-size:70%;
+  @media screen and (max-width:700px) {
+  font-size:50%;
+  }
+  
   text-transform:uppercase;
   display: flex;
   letter-spacing:.1em;
