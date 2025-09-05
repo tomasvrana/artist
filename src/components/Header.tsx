@@ -80,9 +80,9 @@ z-index: 99;
     }
     background:blue;
     animation: mobileMenuBg 5s linear infinite;
-
+    
     position:fixed;
-    width:100%;
+    width:80%;
     height:100%;
     overflow:hidden;
     z-index:100;
@@ -98,6 +98,7 @@ z-index: 99;
 
     .nav-links{
       display:block;
+      margin-top:3em;
       a, .language-switcher{
         display:block;
         margin:0;
