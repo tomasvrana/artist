@@ -340,10 +340,10 @@ color:white;
   letter-spacing:.2em;
   padding:0 5%;
   @media screen and (max-width:1000px) {
-    margin-top:-50px;
+    margin-top:-200px;
   }
   @media screen and (max-width:700px) {
-    margin-top:0px;
+    margin-top:-150px;
   }
     
   h1{
