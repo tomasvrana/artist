@@ -12,11 +12,11 @@ z-index: 99;
 
 .hamburger-menu {
   display:none;
-  width: 35px;
+  width: 25px;
   height: 30px;
   position: absolute;
-  top:30px;
-  right:30px;
+  top:20px;
+  right:25px;
   
   cursor: pointer;
   z-index:110;
@@ -67,6 +67,8 @@ z-index: 99;
 
 
 @media screen and (max-width:1000px){
+  padding:0 20px;
+
   .nav-links{
     display:none;
   }
@@ -82,7 +84,7 @@ z-index: 99;
     animation: mobileMenuBg 5s linear infinite;
     
     position:fixed;
-    width:80%;
+    width:90%;
     height:100%;
     overflow:hidden;
     z-index:100;
