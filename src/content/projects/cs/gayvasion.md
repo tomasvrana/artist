@@ -4,10 +4,10 @@ type: Painting
 price:
   - currency: "CZK"
     old: 70000
-    value: 35000
+    value: 40000
   - currency: "EUR"
     old: 2850
-    value: 1425
+    value: 1640
 category: "skincare"
 parent: /images/
 back: Back
