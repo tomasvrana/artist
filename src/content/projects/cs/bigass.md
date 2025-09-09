@@ -20,9 +20,10 @@ available: 1
 thumb: /images/bigass/mini.jpg
 tags: ['painting', 'available']
 date: '2025-07-10'
+image: /images/bigass/0.jpg
 slug: 'macek'
 translationKey: 'bigass'
 gallery:
-  - image: /images/bigass/0.jpg
+  - image: /images/gayvasion/1.jpg
 ---
 ...

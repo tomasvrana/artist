@@ -19,10 +19,11 @@ location: Opava, CZ
 available: 1
 thumb: /images/bigass/mini.jpg
 tags: ['painting', 'available']
+image: /images/bigass/0.jpg
 date: '2025-07-10'
 slug: 'bigass'
 translationKey: 'bigass'
 gallery:
-  - image: /images/bigass/0.jpg
+  - image: /images/gayvasion/1.jpg
 ---
 ...

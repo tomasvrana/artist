@@ -56,7 +56,7 @@ margin:50px auto 0 auto;
   .top{
     display:flex;
     .project-details{
-      min-width:220px;
+      min-width:35%;
       border-left:1px solid #999;
       padding:30px 0 1em 35px;
       p{
@@ -65,9 +65,19 @@ margin:50px auto 0 auto;
           margin-bottom:15px;
         }
       }
+      @media screen and (max-width:1000px){
+        width:100%;
+¨      }
+    }
+    @media screen and (max-width:1000px){
+      display:block;
     }
     .project-content{
       padding:20px 30px 0 0;
+      min-width:65%;
+      @media screen and (max-width:1000px){
+        width:100%;
+      }
     }
   }
   .price-details{
