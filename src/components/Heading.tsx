@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Appear from './Appear';
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<{ $align?: string; }>`
 h1{
   font-size: 600%;
   color:white;
@@ -16,7 +16,7 @@ h1{
   animation: blurAnimation .2s linear infinite;
   font-weight: 600;
   letter-spacing: -.04em;
-  text-align: center;
+  text-align: ${props => (props.$align) ? props.$align : 'center'};
   line-height:1;
   margin:0 0 -20px 0;
 }
@@ -24,13 +24,18 @@ h1{
 
 const Heading = (props) => {
   return (
-    <Wrapper className="heading ">
-      <h1><Appear>{props.children}</Appear></h1>
+    <Wrapper className="heading " $align={props.align}>
+      <h1>
+        <Appear glitchMaxOffset={10}>
+          {props.children}
+        </Appear>
+      </h1>
     </Wrapper>
   );
 };
 
 Heading.propTypes = {
+  align:PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.node,

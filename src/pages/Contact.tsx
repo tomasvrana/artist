@@ -20,7 +20,7 @@ export const Contact = () => {
         description={`${t('navigation.contact')} - ${t('common.title')}`}
       />
       <div className="content contact">
-        <Card title={pageContent.title}>
+        <Card title={pageContent.title} rotx={`${(Math.floor(Math.random() * 50) - 25) / 20}`} roty={`${(Math.floor(Math.random() * 50) - 25) / 10}`}>
           <Content>
             <div dangerouslySetInnerHTML={{ __html: pageContent.content }} />
           </Content>

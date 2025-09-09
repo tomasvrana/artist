@@ -13,6 +13,16 @@ body {
   100% { background-color: #f3f3df; }  
 }
 
+@keyframes ColorCycle {
+  0%   { color: #f3f3df; } 
+  16%  { color: #f1d4f1; }
+  33%  { color: #c3e8e8; }
+  50%  { color: #e0d1f0; }
+  66%  { color: #eecece; } 
+  83%  { color: #cff2cf; }  
+  100% { color: #f3f3df; }  
+}
+
 @keyframes blurAnimation {
     0% {filter: blur(3px);}
     50% {filter: blur(4px);}  

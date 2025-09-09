@@ -166,7 +166,7 @@ export const ProjectDetail = () => {
   }, [slug, i18n.language]);
 
   if (loading) {
-    return <div className="loading">{t('common.loading')}</div>;
+    return <div className="loading text-center">{t('common.loading')}</div>;
   }
   
   if (!project) {

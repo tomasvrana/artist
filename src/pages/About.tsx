@@ -19,7 +19,7 @@ export const About = () => {
       />
     
       <div className="content about">
-        <Card title={pageContent.title}>
+        <Card title={pageContent.title} rotx={`${(Math.floor(Math.random() * 50) - 25) / 20}`} roty={`${(Math.floor(Math.random() * 50) - 25) / 10}`} bgimg='white url(/tv.jpg) no-repeat right top' padright="280px">
           <div className="about-content">
             <div dangerouslySetInnerHTML={{ __html: pageContent.content }} />
             
