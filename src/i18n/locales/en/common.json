@@ -72,6 +72,7 @@
   },
   "common": {
     "title": "Tomas Vrana",
+    "role": "Artist",
     "loading": "Loading stuff",
     "back": "Back",
     "made": "Handmade with glove in React",

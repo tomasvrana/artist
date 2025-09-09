@@ -71,8 +71,8 @@ export const Home = () => {
   return (
     <>
       <PageMeta 
-        title={`${t('common.title')}`}
-        description={`${t('common.title')}`}
+        title={`${t('common.title')}, ${t('common.role')}`}
+        description={`${t('common.title')}, ${t('common.role')}`}
       />
       <Hero className="home text-center">
         <GallerySlideshow gallery={pageContent.gallery} interval={4000}  />
