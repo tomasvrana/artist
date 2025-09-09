@@ -415,7 +415,7 @@ h1{
   letter-spacing: -.04em;
   text-align: ${t=>t.$align?t.$align:"center"};
   line-height:1;
-  margin:0 0 -20px 0;
+  margin:0 0 0px 0;
 }
 `,Kf=t=>R.jsx(rO,{className:"heading ",$align:t.align,children:R.jsx("h1",{children:R.jsx(iO,{glitchMaxOffset:10,children:t.children})})});Kf.propTypes={align:Me.string,children:Me.oneOfType([Me.string,Me.node,Me.arrayOf(Me.node)])};const uO=pt.div`
   perspective-origin: 150% 150%;
@@ -427,6 +427,11 @@ h1{
     .cardblock{
       background:${t=>t.$bgimg?t.$bgimg:"white"};
       padding:20px ${t=>t.$padright?t.$padright:"100px"} 70px 35px;
+      @media screen and (max-width:700px){
+        background:white;
+        padding:20px 20px 70px 35px;
+      }
+
     }
   }
 

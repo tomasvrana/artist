@@ -18,7 +18,7 @@ h1{
   letter-spacing: -.04em;
   text-align: ${props => (props.$align) ? props.$align : 'center'};
   line-height:1;
-  margin:0 0 -20px 0;
+  margin:0 0 0px 0;
 }
 `;
 

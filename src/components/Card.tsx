@@ -12,6 +12,11 @@ const Wrapper = styled.div<{ $rotx?: number; $roty?: number; $bgimg?: string; $p
     .cardblock{
       background:${props => (props.$bgimg) ? props.$bgimg : 'white'};
       padding:20px ${props => (props.$padright) ? props.$padright : '100px'} 70px 35px;
+      @media screen and (max-width:700px){
+        background:white;
+        padding:20px 20px 70px 35px;
+      }
+
     }
   }
 
