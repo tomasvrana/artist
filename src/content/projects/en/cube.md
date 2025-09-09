@@ -18,5 +18,4 @@ gallery:
   - image: /images/cube/1.jpg
   - image: /images/cube/2.jpg
 ---
-...
-
+Conversion of the Opava fountain “Sphere” into a cube.

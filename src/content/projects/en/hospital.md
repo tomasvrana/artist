@@ -29,5 +29,4 @@ gallery:
   - image: /images/hospital/1.jpg
   
 ---
-...
-
+Here it’s a little more complicated than it might not seem. But still it’s true.

@@ -22,5 +22,4 @@ gallery:
   - image: /images/heart/4.jpg
   - image: /images/heart/5.jpg
 ---
-...
-
+U Alhaurínu cedule stála. Z plna bíla křičela. Velké srdce dostala. 

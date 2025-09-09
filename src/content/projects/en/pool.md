@@ -25,5 +25,4 @@ thumb: /images/pool/mini.jpg
 gallery:
   - image: /images/pool/0.jpg
 ---
-...
-
+A small bow to David H.

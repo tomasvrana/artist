@@ -22,5 +22,4 @@ gallery:
   - image: /images/heart/4.jpg
   - image: /images/heart/5.jpg
 ---
-...
-
+Near Alhaurín a sign stood. In full white it shouted. It got a big heart.

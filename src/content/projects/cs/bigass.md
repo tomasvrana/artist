@@ -26,4 +26,4 @@ translationKey: 'bigass'
 gallery:
   - image: /images/gayvasion/1.jpg
 ---
-...
+Větší kus spatřen nad vegetačním porostem.

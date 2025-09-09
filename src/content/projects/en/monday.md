@@ -21,5 +21,4 @@ gallery:
   - image: /images/monday/2.jpg
   - image: /images/monday/3.jpg
 ---
-...
-
+Another one of those sharp days for Howard. Monday is classic.

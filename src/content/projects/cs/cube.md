@@ -19,5 +19,5 @@ gallery:
   - image: /images/cube/1.jpg
   - image: /images/cube/2.jpg
 ---
-...
+Konverze opavské kašny Koule do krychle.
 

@@ -23,5 +23,4 @@ gallery:
   - image: /images/messenger/3.jpg
   
 ---
-...
-
+Lepší jak pes. Ve všem. Taky jde lépe vidět ve tmě.

@@ -1,6 +1,6 @@
 ---
 
-title: Nepu
+title: Nepů
 parent: /images/
 back: Back
 type: Painting
@@ -21,5 +21,5 @@ gallery:
   - image: /images/nepu/1.jpg
   
 ---
-...
+Cesty Půovy jsou nevyspitatelné.
 

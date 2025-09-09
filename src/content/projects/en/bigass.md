@@ -26,4 +26,4 @@ translationKey: 'bigass'
 gallery:
   - image: /images/gayvasion/1.jpg
 ---
-...
+A larger piece spotted above the vegetation cover.

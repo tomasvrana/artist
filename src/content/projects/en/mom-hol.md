@@ -20,5 +20,4 @@ gallery:
   - image: /images/matka/3.jpg
   
 ---
-...
-
+Well, these places we probably all know.

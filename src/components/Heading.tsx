@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import Appear from './Appear';
 
 const Wrapper = styled.div`
 h1{
@@ -12,19 +13,19 @@ h1{
     font-size: 300%;
   }
 
-  animation: blurAnimation 1s linear infinite;
-  font-weight: 100;
+  animation: blurAnimation .2s linear infinite;
+  font-weight: 600;
   letter-spacing: -.04em;
   text-align: center;
-  line-height:2;
-  margin:0;
+  line-height:1;
+  margin:0 0 -20px 0;
 }
 `;
 
 const Heading = (props) => {
   return (
     <Wrapper className="heading ">
-      <h1>{props.children}</h1>
+      <h1><Appear>{props.children}</Appear></h1>
     </Wrapper>
   );
 };

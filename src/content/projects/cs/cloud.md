@@ -25,5 +25,5 @@ translationKey: 'cloud'
 gallery:
   - image: /images/cloud/0.jpg
 ---
-...
+Slunce paprsek nedopadá dobře. Celé se to nevyvýjí pro malého Howarda moc dobře. Mrak s patkou a knírem vůdce je meteorologický oříšek.
 

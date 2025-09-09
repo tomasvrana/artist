@@ -19,5 +19,4 @@ gallery:
   - image: /images/islam/2.jpg
   - image: /images/islam/3.jpg
 ---
-...
-
+To celebrate the Arab Spring we tested the integration readiness of the population.

@@ -23,5 +23,4 @@ gallery:
   - image: /images/messenger/3.jpg
   
 ---
-...
-
+Better than a dog. In every way. Also easier to see in the dark.

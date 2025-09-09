@@ -28,5 +28,4 @@ image: /images/escalace/0.jpg
 gallery:
   - image: /images/escalace/0.jpg
 ---
-...
-
+Někdy se i absurdní situace vymykají kontrole. I role.

@@ -29,5 +29,4 @@ gallery:
   - image: /images/hospital/1.jpg
   
 ---
-...
-
+Tady je to trochu složitější než by se nemohlo nezdát. Ale zase je to podle pravdy.  

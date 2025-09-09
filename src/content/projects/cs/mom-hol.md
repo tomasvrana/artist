@@ -20,5 +20,4 @@ gallery:
   - image: /images/matka/3.jpg
   
 ---
-...
-
+No tato místa známe snad všichni.

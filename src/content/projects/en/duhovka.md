@@ -20,5 +20,4 @@ translationKey: 'rainbowball'
 gallery:
   - image: /images/duhovka/1.jpg
 ---
-...
-
+Conversion of the Opava fountain “Sphere” into a rainbow marble.

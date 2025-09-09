@@ -20,5 +20,4 @@ gallery:
   - image: /images/matka/2.jpg
   
 ---
-...
-
+Every shift calls for a small break.

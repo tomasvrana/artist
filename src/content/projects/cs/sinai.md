@@ -29,5 +29,4 @@ gallery:
   - image: /images/sinaj/1.jpg
   
 ---
-...
-
+Asi nejvěrnější zobrazení těch diskutabilních událostí, kdy se rozestoupí moře díky ještě diskutabilnější fauně.

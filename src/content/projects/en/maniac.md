@@ -21,5 +21,4 @@ gallery:
   - image: /images/maniac/1.jpg
   
 ---
-...
-
+Technological transmutation of biological forms. Separated from surrounding perceptions by dependencies.

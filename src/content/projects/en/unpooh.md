@@ -21,5 +21,4 @@ gallery:
   - image: /images/nepu/1.jpg
   
 ---
-...
-
+Pooh’s ways are unpredictable.

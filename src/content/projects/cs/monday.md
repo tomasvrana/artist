@@ -21,5 +21,4 @@ gallery:
   - image: /images/monday/2.jpg
   - image: /images/monday/3.jpg
 ---
-...
-
+Zase jeden z těch vyostřených dní pro Howarda. Pondělí je klasika.

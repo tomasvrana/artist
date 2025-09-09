@@ -29,5 +29,4 @@ gallery:
   - image: /images/sinaj/1.jpg
   
 ---
-...
-
+Probably the most faithful depiction of those questionable events when the sea parts thanks to even more questionable fauna.

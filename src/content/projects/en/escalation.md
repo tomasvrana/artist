@@ -28,5 +28,4 @@ image: /images/escalace/0.jpg
 gallery:
   - image: /images/escalace/0.jpg
 ---
-...
-
+Sometimes even absurd situations get out of control.

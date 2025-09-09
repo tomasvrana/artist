@@ -22,5 +22,4 @@ gallery:
   - image: /images/nepu/11.jpg
   
 ---
-...
-
+Pooh’s ways back are inexplicable.

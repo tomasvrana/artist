@@ -25,5 +25,4 @@ translationKey: 'cloud'
 gallery:
   - image: /images/cloud/0.jpg
 ---
-...
-
+The sunbeam doesn’t fall well. The whole thing isn’t turning out too well for little Howard. A cloud with a base and the leader’s moustache is a meteorological puzzle.

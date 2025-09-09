@@ -20,5 +20,5 @@ translationKey: 'rainbowball'
 gallery:
   - image: /images/duhovka/1.jpg
 ---
-...
+Konverze opavské kašny Koule do duhové kuličky.
 

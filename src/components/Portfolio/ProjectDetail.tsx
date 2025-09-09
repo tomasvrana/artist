@@ -248,7 +248,7 @@ export const ProjectDetail = () => {
             </div>
             <div className="status-details">
               <Status available={project.available} />
-              {project.price &&
+              {(project.available == 1) &&
                 <CurrencySelect array={project.price} />
               }
             </div>

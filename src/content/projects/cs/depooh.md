@@ -1,6 +1,6 @@
 ---
 
-title: Depú
+title: Depů
 parent: /images/
 back: Back
 type: Painting
@@ -22,5 +22,4 @@ gallery:
   - image: /images/nepu/11.jpg
   
 ---
-...
-
+Cesty Půovy zpátky jsou nevysvětlitelné.

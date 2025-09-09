@@ -1,7 +1,6 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { usePageContent } from '../hooks/usePageContent';
-import Heading from '../components/Heading';
+import Card from '../components/Card';
 import { PageMeta } from '../components/PageMeta';
 
 export const About = () => {
@@ -20,21 +19,22 @@ export const About = () => {
       />
     
       <div className="content about">
-        <Heading>{pageContent.title}</Heading>
-        <div className="about-content">
-          <div dangerouslySetInnerHTML={{ __html: pageContent.content }} />
-          
-          {pageContent.skills && (
-            <div className="skills">
-              <h2>{t('about.skills')}</h2>
-              <ul>
-                {pageContent.skills.split(',').map((skill: string) => (
-                  <li key={skill.trim()}>{skill.trim()}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </div>
+        <Card title={pageContent.title}>
+          <div className="about-content">
+            <div dangerouslySetInnerHTML={{ __html: pageContent.content }} />
+            
+            {pageContent.skills && (
+              <div className="skills">
+                <h2>{t('about.skills')}</h2>
+                <ul>
+                  {pageContent.skills.split(',').map((skill: string) => (
+                    <li key={skill.trim()}>{skill.trim()}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </Card>
       </div>
     </>
   );

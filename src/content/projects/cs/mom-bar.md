@@ -20,5 +20,4 @@ gallery:
   - image: /images/matka/2.jpg
   
 ---
-...
-
+Každá šichta si žádá menší oraz.

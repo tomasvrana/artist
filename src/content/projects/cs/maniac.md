@@ -21,5 +21,4 @@ gallery:
   - image: /images/maniac/1.jpg
   
 ---
-...
-
+Technolocká transmutace biologických forem. Od okolních vjemů oddělených závislostmi. 

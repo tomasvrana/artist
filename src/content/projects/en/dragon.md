@@ -25,5 +25,4 @@ translationKey: 'dragon'
 gallery:
   - image: /images/dragon/0.jpg
 ---
-...
-
+Simply a happy dragon. Nothing less.

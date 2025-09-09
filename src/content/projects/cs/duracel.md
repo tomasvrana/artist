@@ -22,5 +22,4 @@ gallery:
   - image: /images/duracel/2.jpg
   - image: /images/duracel/3.jpg
 ---
-...
-
+Konverze starého mostního pilíře na monočlánek.
