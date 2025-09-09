@@ -388,6 +388,7 @@ color:white;
 `,JT=()=>{const{t,i18n:l}=vt(),i=l.language,u=ql(),o=Xf("home");return o?R.jsxs(R.Fragment,{children:[R.jsx(cr,{title:`${t("common.title")}`,description:`${t("common.title")}`}),R.jsxs(IT,{className:"home text-center",children:[R.jsx(PT,{gallery:o.gallery,interval:4e3}),R.jsxs("section",{className:"hero",children:[R.jsx("h1",{children:o.title}),R.jsx("p",{children:o.subtitle}),R.jsx("button",{onClick:()=>u("/"+i+"/portfolio"),children:o.cta})]})]})]}):R.jsx("div",{className:"text-center"})};var Yc={exports:{}},Gc,l0;function FT(){if(l0)return Gc;l0=1;var t="SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";return Gc=t,Gc}var Vc,i0;function WT(){if(i0)return Vc;i0=1;var t=FT();function l(){}function i(){}return i.resetWarningCache=l,Vc=function(){function u(f,h,p,g,y,b){if(b!==t){var x=new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");throw x.name="Invariant Violation",x}}u.isRequired=u;function o(){return u}var c={array:u,bigint:u,bool:u,func:u,number:u,object:u,string:u,symbol:u,any:u,arrayOf:o,element:u,elementType:u,instanceOf:o,node:u,objectOf:o,oneOf:o,oneOfType:o,shape:o,exact:o,checkPropTypes:i,resetWarningCache:l};return c.PropTypes=c,c},Vc}var r0;function eO(){return r0||(r0=1,Yc.exports=WT()()),Yc.exports}var tO=eO();const ut=bf(tO),nO=Tt.div`
 h1{
   font-size: 600%;
+  color:white;
   @media screen and (max-width:1000px){
     font-size: 480%;
   }
@@ -395,6 +396,7 @@ h1{
     font-size: 300%;
   }
 
+  animation: blurAnimation 1s linear infinite;
   font-weight: 100;
   letter-spacing: -.04em;
   text-align: center;

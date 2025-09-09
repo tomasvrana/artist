@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 const Wrapper = styled.div`
 h1{
   font-size: 600%;
+  color:white;
   @media screen and (max-width:1000px){
     font-size: 480%;
   }
@@ -11,6 +12,7 @@ h1{
     font-size: 300%;
   }
 
+  animation: blurAnimation 1s linear infinite;
   font-weight: 100;
   letter-spacing: -.04em;
   text-align: center;

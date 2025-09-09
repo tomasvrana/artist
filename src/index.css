@@ -14,14 +14,9 @@ body {
 }
 
 @keyframes blurAnimation {
-    0% {
-        filter: blur(10px);
-        opacity:0; 
-    }
-    100% {
-      filter: blur(0);
-      opacity:1; 
-    }  
+    0% {filter: blur(2px);}
+    50% {filter: blur(4px);}  
+    100% {filter: blur(2px);}  
 }
 
 
