@@ -18,6 +18,7 @@ slug: 'maniak'
 translationKey: 'maniak'
 image: /images/maniac/0.jpg
 gallery:
+  - image: /images/maniac/2.jpg
   - image: /images/maniac/1.jpg
   
 ---

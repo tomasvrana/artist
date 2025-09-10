@@ -25,6 +25,7 @@ slug: 'gayvasion'
 translationKey: 'gayvasion'
 image: /images/gayvasion/0.jpg
 gallery:
+  - image: /images/gayvasion/2.jpg
   - image: /images/gayvasion/1.jpg
 ---
 Invasion from space. Wednesday.
