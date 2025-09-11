@@ -10,7 +10,7 @@ links:
   - url: https://linkedin.com/in/tomasvrana
     title: LinkedIn
 ---
-> Tom is a wide scope artist with an inhuman passion for context breaking topics while strictly maintaining the sheer balance between ridiculousness and fundamental forms of funk and the concept of parody.   
+> Tom is a wide scope artist with an inhuman passion for context breaking topics while strictly maintaining the fragile balance between ridiculousness, fundamental forms of funk and the concept of parody.   
 
 ## Offer
 
