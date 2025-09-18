@@ -7,7 +7,8 @@ links:
     title: Instagram
   - url: https://behance.net/tomasvrana
     title: Behance
-
+  - url: https://og.rarible.com/tomas-vrana
+    title: Rarible
     
 ---
 ### Telefon

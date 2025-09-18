@@ -146,6 +146,7 @@ export const Header = () => {
           <Link to={`/${currentLang}`} onClick={() => setExpanded(!expanded)}>{t('navigation.home')}</Link>
           <Link to={`/${currentLang}/about`} onClick={() => setExpanded(!expanded)}>{t('navigation.about')}</Link>
           <Link to={`/${currentLang}/portfolio`} onClick={() => setExpanded(!expanded)}>{t('navigation.portfolio')}</Link>
+          <Link to="https://og.rarible.com/tomas-vrana/items" target='_blank' onClick={() => setExpanded(!expanded)}>NFT</Link>
           <Link to={`/${currentLang}/contact`} onClick={() => setExpanded(!expanded)}>{t('navigation.contact')}</Link>
           <LanguageSwitcher />
         </div>

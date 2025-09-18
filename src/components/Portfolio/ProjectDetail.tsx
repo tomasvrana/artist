@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 import { getProjectBySlug } from '../../lib/markdown';
@@ -243,6 +243,9 @@ export const ProjectDetail = () => {
                 }
                 {project.location &&
                   <p className="location"><Label>{t('portfolio.location')}: </Label> {project.location}</p>
+                }
+                {project.nft &&
+                  <p className="nft"><Label>{t('portfolio.buynft')}: </Label> <Link to={project.nft} target='_blank'><br /><img src="/nft-icon.png" className='nft' width="80" height="80" alt="NFT" /></Link></p>
                 }
               </div>
             </div>

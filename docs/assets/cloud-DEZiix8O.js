@@ -1,4 +1,4 @@
----
+const n=`---
 title: Obratník mraka
 type: Painting
 parent: /images/
@@ -28,3 +28,4 @@ gallery:
 ---
 Slunce paprsek nedopadá dobře. Celé se to nevyvýjí pro malého Howarda moc dobře. Mrak s patkou a knírem vůdce je meteorologický oříšek.
 
+`;export{n as default};

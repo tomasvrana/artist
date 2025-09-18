@@ -31,7 +31,7 @@ const ProjectCard = styled.article<{ $rotx?: number; $roty?: number; }>`
     display: block;
     margin:auto;
     width:300px;
-    img{
+    .thumb{
       width:100%;
       height:300px;
       object-fit: cover;
@@ -111,8 +111,14 @@ const ProjectCard = styled.article<{ $rotx?: number; $roty?: number; }>`
         }
       }
     }
+    .nft{
+      position:absolute;
+      top:16%;
+      right:5%;
+      width:70px;
+      height:70px;
+    }
   }
-
   .info{
     transform:rotateX(${props => props.$rotx}deg) rotateY(${props => props.$roty}deg);
     width:300px;
@@ -211,7 +217,10 @@ export const ProjectList = () => {
             >
               <div className="thumbnail">
                 {project.thumb &&
-                  <img src={project.thumb} alt={''} />
+                  <img src={project.thumb} className='thumb' alt={''} />
+                }
+                {project.nft &&
+                  <img src="/nft-icon-small.png" className='nft' alt="NFT" />
                 }
                 <div className={`status status-${project.available}`}>
                   {(project.available == 0) && 
