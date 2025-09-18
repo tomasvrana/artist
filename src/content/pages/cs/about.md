@@ -10,7 +10,7 @@ links:
   - url: https://linkedin.com/in/tomasvrana
     title: LinkedIn
 ---
-> Tom je umělec širokého záběru s nelidskou vášní pro témata, která narušují kontext, přičemž důsledně udržuje křehkou rovnováhu mezi absurdností, základními formami výsměchu a konceptem parodie.
+> Tom je umělec širokého záběru s nelidskou vášní pro motivy, které demontují kontext, přičemž důsledně udržuje křehkou rovnováhu mezi absurdností, základními formami výsměchu a konceptem parodie.
 
 ## Nabídka
 ### Obrazy na rámované plátno

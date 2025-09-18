@@ -11,7 +11,13 @@ links:
     title: LinkedIn
     
 ---
-The forms of how to contact Tom ranges from writting simple message using given social network listed bellow. You can also get more elaborate and write an e-mail to his address: tomas@vrana.org. If you prefer to be more personal and vocal then you might prefer to dial +420608028482 phone number and wait for human operated answer.
+### The phone number
+
++420 608 028 482
+
+### The E-mail
+
+tomas@vrana.org
 
 ## Possible Subjects of contact
 
