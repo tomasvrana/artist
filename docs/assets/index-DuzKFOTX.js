@@ -419,7 +419,6 @@ h1{
 }
 `,Xf=t=>T.jsx(rO,{className:"heading ",$align:t.align,children:T.jsx("h1",{children:T.jsx(lO,{glitchMaxOffset:10,children:t.children})})});Xf.propTypes={align:Me.string,children:Me.oneOfType([Me.string,Me.node,Me.arrayOf(Me.node)])};const uO=pt.div`
   perspective-origin: 150% 150%;
-  transform-style: preserve-3d;
   perspective:1000px;
 
   .wrap{

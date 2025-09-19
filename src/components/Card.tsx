@@ -4,7 +4,6 @@ import Heading from './Heading';
 
 const Wrapper = styled.div<{ $rotx?: number; $roty?: number; $bgimg?: string; $padright?: number; }>`
   perspective-origin: 150% 150%;
-  transform-style: preserve-3d;
   perspective:1000px;
 
   .wrap{
