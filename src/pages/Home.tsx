@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { usePageContent } from '../hooks/usePageContent';
 import { PageMeta } from '../components/PageMeta';
 import GallerySlideshow from '../components/Slider'
+import Heading from '../components/Heading'
 import styled from 'styled-components';
 
 const Hero = styled.div`
@@ -78,7 +79,7 @@ export const Home = () => {
         <GallerySlideshow gallery={pageContent.gallery} interval={4000}  />
         <section className="hero">
 
-          <h1>{pageContent.title}</h1>
+          <Heading>{pageContent.title}</Heading>
           <p>{pageContent.subtitle}</p>
           <button onClick={() => navigate('/'+currentLang+'/portfolio')}>
             {pageContent.cta}
