@@ -1,5 +1,5 @@
 ---
-title: Oh shit!
+title: Holy shit!
 type: Painting
 price:
   - currency: "CZK"
@@ -20,7 +20,7 @@ available: 1
 tags: ['painting', 'available']
 date: '2025-08-15'
 thumb: /images/ohshit/mini.jpg
-slug: 'ohshit'
+slug: 'holyshit'
 translationKey: 'ohshit'
 image: /images/ohshit/0.jpg
 ---
