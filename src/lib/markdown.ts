@@ -1,6 +1,7 @@
 import { marked } from 'marked';
 import yaml from 'js-yaml';
 import type { Project } from '../types/project';
+import type { Event } from '../types/event';
 
 // Nahraď parseFrontmatter funkcí tímto:
 function parseFrontmatter(content: string) {
@@ -24,6 +25,11 @@ function parseFrontmatter(content: string) {
 }
 
 const projectModules = import.meta.glob('/src/content/projects/**/*.md', { 
+  query: '?raw',
+  import: 'default'
+});
+
+const eventModules = import.meta.glob('/src/content/events/**/*.md', { 
   query: '?raw',
   import: 'default'
 });
@@ -120,6 +126,96 @@ export async function getProjectBySlug(slug: string, locale: string): Promise<Pr
     };
   } catch (error) {
     console.error(`Error loading project ${slug}:`, error);
+    return null;
+  }
+}
+
+export async function getAllEvents(locale: string): Promise<Event[]> {
+  const events: Event[] = [];
+  
+  for (const [path, loadModule] of Object.entries(eventModules)) {
+    const pathMatch = path.match(/\/src\/content\/events\/(\w+)\/([\w-]+)\.md$/);
+    
+    if (!pathMatch) continue;
+    
+    const [, fileLocale, slug] = pathMatch;
+    
+    if (fileLocale !== locale) continue;
+    
+    try {
+      const rawContent = await loadModule() as string;
+      const { data, content } = parseFrontmatter(rawContent);
+      
+      const htmlContent = marked(content);
+
+      events.push({
+        slug,
+        title: data.title || slug,
+        description: data.description || '',
+        date: new Date(data.date),
+        tags: Array.isArray(data.tags) ? data.tags : [],
+        price: Array.isArray(data.price) ? data.price as PriceItem[] : [],
+        thumb: data.thumb,
+        location: data.location,
+        media: data.media,
+        image: data.image,
+        year: data.year,
+        nft: data.nft,
+        sliderheight: data.sliderheight,
+        width: data.width,
+        height: data.height,
+        available: data.available,
+        gallery: data.gallery,
+        content: htmlContent,
+        links: data.links,
+      });
+    } catch (error) {
+      console.error(`Error loading event ${path}:`, error);
+    }
+  }
+  
+  // Seřaď projekty podle data (nejnovější první)
+  return events.sort((a, b) => b.date.getTime() - a.date.getTime());
+}
+
+export async function getEventBySlug(slug: string, locale: string): Promise<Event | null> {
+  const eventPath = `/src/content/events/${locale}/${slug}.md`;
+  const loadModule = eventModules[eventPath];
+  
+  if (!loadModule) {
+    console.error(`Event not found: ${eventPath}`);
+    return null;
+  }
+  
+  try {
+    const rawContent = await loadModule() as string;
+    const { data, content } = parseFrontmatter(rawContent);
+    
+    const htmlContent = marked(content);
+    
+    return {
+      slug,
+      title: data.title || slug,
+      description: data.description || '',
+      date: data.date || new Date().toISOString(),
+      tags: Array.isArray(data.tags) ? data.tags : [],
+      price: Array.isArray(data.price) ? data.price as PriceItem[] : [],
+      thumb: data.thumb,
+      location: data.location,
+      media: data.media,
+      nft: data.nft,
+      image: data.image,
+      year: data.year,
+      sliderheight: data.sliderheight,
+      width: data.width,
+      height: data.height,
+      available: data.available,
+      gallery: data.gallery,
+      content: htmlContent,
+      links: data.links,
+    };
+  } catch (error) {
+    console.error(`Error loading event ${slug}:`, error);
     return null;
   }
 }

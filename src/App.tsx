@@ -6,6 +6,9 @@ import { About } from './pages/About';
 import { Portfolio } from './pages/Portfolio';
 import { Contact } from './pages/Contact';
 import { Project } from './pages/Project';
+import { Nft } from './pages/Nft';
+import { Events } from './pages/Events';
+import { Event } from './pages/Event';
 import { Suspense, useEffect } from 'react';
 import { initGA, trackPage } from './analytics';
 
@@ -37,6 +40,9 @@ const AppRoutes = () => {
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="portfolio/:slug" element={<Project />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="nft" element={<Nft />} />
+          <Route path="events" element={<Events />} />
+          <Route path="event/:slug" element={<Event />} />
         </Route>
       ))}
     </Routes>

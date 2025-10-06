@@ -54,10 +54,12 @@
     "inStock": "In Stock",
     "specifications": "Specifications"
   },
-  "categories": {
-    "all": "All",
-    "skincare": "Skincare",
-    "makeup": "Makeup",
+  "events": {
+    "title": "Events",
+    "date": "Date",
+    "upcoming": "Upcoming",
+    "over": "Over",
+    "location": "Location",
     "accessories": "Accessories"
   },
   "tags": {

@@ -54,6 +54,14 @@
     "inStock": "Skladem",
     "specifications": "Specifikace"
   },
+    "events": {
+    "title": "Akce",
+    "date": "Date",
+    "location": "Location",
+    "upcoming": "Nadcházející",
+    "over": "Ukončeno",
+    "accessories": "Accessories"
+  },
   "categories": {
     "all": "Vše",
     "skincare": "Péče o pleť",

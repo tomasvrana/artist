@@ -1,8 +1,8 @@
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
-import { getProjectBySlug } from '../../lib/markdown';
-import type { Project } from '../../types/project';
+import { getEventBySlug } from '../../lib/markdown';
+import type { Event } from '../../types/event';
 import styled from 'styled-components';
 import Content from '../Content';
 import Status from '../Status';
@@ -44,7 +44,7 @@ margin:50px auto 0 auto;
     margin:0 0 50px 0;
   }
 }
-.project-content .dash{
+.event-content .dash{
   margin:20px 0 20px 0;
   border-top:1px solid #999;
   width:100px;
@@ -55,7 +55,7 @@ margin:50px auto 0 auto;
   padding:0px 40px 40px 40px;
   .top{
     display:flex;
-    .project-details{
+    .event-details{
       min-width:35%;
       border-left:1px solid #999;
       padding:30px 0 1em 35px;
@@ -72,7 +72,7 @@ margin:50px auto 0 auto;
     @media screen and (max-width:1000px){
       display:block;
     }
-    .project-content{
+    .event-content{
       padding:20px 30px 0 0;
       min-width:65%;
       @media screen and (max-width:1000px){
@@ -139,84 +139,88 @@ function CurrencySelect({ array }: { array: CurrencyItem[] }) {
     </div>
   );
 }
-export const ProjectDetail = () => {
+export const EventDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
-  const [project, setProject] = useState<Project | null>(null);
+  const [event, setEvent] = useState<Event | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const loadProject = async () => {
+    const loadEvent = async () => {
       if (!slug) return;
       
       setLoading(true);
       try {
-        const projectData = await getProjectBySlug(slug, i18n.language);
-        setProject(projectData);
+        const eventData = await getEventBySlug(slug, i18n.language);
+        setEvent(eventData);
       } catch (error) {
-        console.error('Error loading project:', error);
-        setProject(null);
+        console.error('Error loading event:', error);
+        setEvent(null);
       } finally {
         setLoading(false);
       }
     };
 
-    loadProject();
+    loadEvent();
   }, [slug, i18n.language]);
 
   if (loading) {
     return <div className="loading text-center">{t('common.loading')}</div>;
   }
   
-  if (!project) {
+  if (!event) {
     return (
       <div className="content error-page">
-        <h1>{t('portfolio.projectNotFound')}</h1>
-        <button onClick={() => navigate(`/${i18n.language}/portfolio`)}>
+        <h1>{t('portfolio.eventNotFound')}</h1>
+        <button onClick={() => navigate(`/${i18n.language}/events`)}>
           {t('common.back')}
         </button>
       </div>
     );
   }
+  function datePart(date, lang, part){
+    return date.toLocaleString(lang, part);
+  }
 
   return (
     <>
-    {project && (
+    {event && (
       <PageMeta 
-        title={`${project.title} | ${t('navigation.portfolio')} | ${t('common.title')}`}
-        description={project.description}
-        image={project.image}
-        url={`https://dev2.vrana.org/#/${i18n.language}/portfolio/${project.slug}`}
+        title={`${event.title} | ${t('navigation.events')} | ${t('common.title')}`}
+        description={event.description}
+        image={event.image}
+        url={`https://dev2.vrana.org/#/${i18n.language}/event/${event.slug}`}
       />
     )}
     <CurrencyProvider>
-      <Detail className="project-detail">
+      <Detail className="event-detail">
         <Content>
 
           <div className="top text-center">
             <button 
               className="back-button" 
-              onClick={() => navigate(`/${i18n.language}/portfolio`)}
+              onClick={() => navigate(`/${i18n.language}/events`)}
             >
               {t('common.back')}<br />←
             </button>
             
             <div className="heading">
-              <h1>{project.title}</h1>
+              <h1>{event.title}</h1>
             </div>
-            <span className="year">{project.year}</span>
-
+            <div className='date'>
+              <span className='year'>{event.date.toLocaleString('default', { month: 'long' })}</span>
+            </div>
           </div>
 
           <div className="featured">
-            {project.image ? (
+            {event.image ? (
               <div className="images">
-                <img src={project.image} />
+                <img src={event.image} />
               </div>
             ) : (
               <div>
-                {project.gallery.map((item, index) => (
+                {event.gallery.map((item, index) => (
                   <div className="images" key={index}>
                     <img src={item.image} />
                   </div>
@@ -228,43 +232,21 @@ export const ProjectDetail = () => {
           
           <div className="information">
             <div className="top">
-              <div className="project-content">
-                <div className="text" dangerouslySetInnerHTML={{ __html: project.content }} />
+              <div className="event-content">
+                <div className="text" dangerouslySetInnerHTML={{ __html: event.content }} />
               </div>
-              <div className="project-details">
-                {project.width &&
-                  <p className="width"><Label>{t('portfolio.width')}: </Label> {project.width} cm</p>
-                }
-                {project.height &&
-                  <p className="height"><Label>{t('portfolio.height')}: </Label> {project.height} cm</p>
-                }
-                {project.media &&
-                  <p className="technique"><Label>{t('portfolio.technique')}: </Label> {project.media}</p>
-                }
-                {project.location &&
-                  <p className="location"><Label>{t('portfolio.location')}: </Label> {project.location}</p>
-                }
-                {project.nft &&
-                  <p className="nft"><Label>{t('portfolio.buynft')}: </Label> <Link to={project.nft} target='_blank'><br /><img src="/nft-icon.png" className='nft' width="80" height="80" alt="NFT" /></Link></p>
-                }
-              </div>
+
             </div>
-            <div className="status-details">
-              <Status available={project.available} />
-              {(project.available == 1) &&
-                <CurrencySelect array={project.price} />
-              }
-            </div>
+
           </div>
-          {project.gallery &&
-            <div className="images gallery">
-              {project.gallery.map((item, index) => (
-                <div className="image" key={index}>
-                  <img src={item.image} />
-                </div>
-              ))}
-            </div>
-          }
+
+          <div className="images gallery">
+            {event.gallery.map((item, index) => (
+              <div className="image" key={index}>
+                <img src={item.image} />
+              </div>
+            ))}
+          </div>
 
         </Content>
       </Detail>
