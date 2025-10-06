@@ -2,8 +2,11 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Wrapper = styled.div`
-  max-width:1200px;
+  max-width:1600px;
   margin:0px auto 50px auto;
+  @media screen and (max-width:1800px){
+    max-width:1200px;
+  }
 `;
 
 const Content = (props) => {

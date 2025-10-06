@@ -221,8 +221,11 @@ main {
 }
 
 .content{
-  max-width: 1200px;
   margin: auto;
+  max-width:1600px;
+  @media screen and (max-width:1800px){
+    max-width:1200px;
+  }
 }
 .content.about,.content.contact{
   max-width: 800px;
