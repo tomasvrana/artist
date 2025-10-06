@@ -15,7 +15,7 @@ year: 2025
 width: 90
 height: 90
 description: 
-location: Praha, CZ
+location: Prague, CZ
 available: 0
 tags: ['painting', 'available']
 date: '2025-08-15'

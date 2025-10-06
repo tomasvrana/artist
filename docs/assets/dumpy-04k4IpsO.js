@@ -1,10 +1,10 @@
 const n=`---
-title: Temple mount
+title: Dumpy
 type: Painting
 price:
   - currency: "CZK"
     old: 15000
-    value: 15000
+    value: 40000
   - currency: "EUR"
     old: 2850
     value: 600
@@ -12,20 +12,18 @@ parent: /images/
 back: Back
 media: Akryl na plátně
 year: 2025
-width: 145
-height: 100
+width: 90
+height: 90
 description: 
-location: Praha, CZ
-available: 1
+location: Prague, CZ
+available: 0
 tags: ['painting', 'available']
 date: '2025-08-15'
-thumb: /images/temple/mini.jpg
-slug: 'ohshit'
-translationKey: 'ohshit'
-image: /images/temple/0.jpg
-gallery:
-  - image: /images/temple/2.jpg
-  - image: /images/temple/1.jpg
+thumb: /images/dumpy/mini.jpg
+slug: 'dumpy'
+translationKey: 'dumpy'
+image: /images/dumpy/0.jpg
+
 ---
 
 `;export{n as default};
