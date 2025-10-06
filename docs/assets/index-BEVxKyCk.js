@@ -453,6 +453,7 @@ gap:3rem 0;
   width:100%;
   
   .thumbnail{
+    transition: transform .4s;
     transform:rotateX(${t=>t.$rotx}deg) rotateY(${t=>t.$roty}deg);
     display: block;
     margin:auto;
@@ -563,7 +564,9 @@ gap:3rem 0;
       letter-spacing:.3em;
     }
   }
-
+  &:hover .thumbnail{
+    transform:rotateX(0deg) rotateY(0deg);
+  }
 
 `,bO=()=>{const{t,i18n:a}=rt(),l=ca(),[u,o]=C.useState([]),[c,f]=C.useState(!0),[h,p]=C.useState("all"),{translateTag:g}=fv();C.useEffect(()=>{(async()=>{f(!0);try{const w=await hO(a.language);o(w)}catch(w){console.error("Error loading projects:",w),o([])}finally{f(!1)}})()},[a.language]);const y=Array.from(new Set(u.flatMap(S=>S.tags))).sort(),v=h==="all"?u:u.filter(S=>S.tags.includes(h));return c?x.jsxs("div",{className:"loading text-center",children:[x.jsxs("p",{children:[t("common.loading")," ..."]}),x.jsx("div",{className:"loader"})]}):x.jsxs("div",{className:"project-list",children:[y.length>0&&x.jsxs("div",{className:"filter-tags",children:[x.jsx("button",{className:`filter-tag ${h==="all"?"active":""}`,onClick:()=>p("all"),children:t("portfolio.allProjects")}),y.map(S=>x.jsx("button",{className:`filter-tag ${h===S?"active":""}`,onClick:()=>p(S),children:g(S)},S))]}),x.jsx(yO,{className:"projects-grid",children:v.length===0?x.jsx("p",{className:"no-projects",children:t("portfolio.noProjects")}):v.map(S=>x.jsx(vO,{className:"project-card",onClick:()=>l(`/${a.language}/portfolio/${S.slug}`),$rotx:`${(Math.floor(Math.random()*50)-25)/20}`,$roty:`${(Math.floor(Math.random()*50)-25)/10}`,children:x.jsxs("div",{className:"thumbnail",children:[S.thumb&&x.jsx("img",{src:S.thumb,className:"thumb",alt:""}),S.nft&&x.jsx("img",{src:"/nft-icon-small.png",className:"nft",alt:"NFT"}),x.jsxs("div",{className:`status status-${S.available}`,children:[S.available==0&&x.jsx("p",{className:"sold",children:t("portfolio.sold")}),S.available==1&&x.jsx("p",{className:"available",children:t("portfolio.available")}),S.available==2&&x.jsx("p",{className:"public",children:t("portfolio.public")}),S.available==3&&x.jsx("p",{className:"removed",children:t("portfolio.removed")}),S.available==4&&x.jsx("p",{className:"over",children:t("portfolio.over")})]}),x.jsxs("div",{className:"info",children:[x.jsx("h2",{children:S.title}),x.jsx("div",{className:"year",children:S.year})]})]})},S.slug))})]})},xO=()=>{const{t}=rt();return x.jsxs(x.Fragment,{children:[x.jsx(Ha,{title:`${t("portfolio.title")} - ${t("common.title")}`,description:`${t("portfolio.title")} - ${t("common.title")}`}),x.jsxs("div",{className:"content portfolio",children:[x.jsx(fo,{children:t("portfolio.title")}),x.jsx(bO,{})]})]})},SO=et.div`
   max-width:1600px;

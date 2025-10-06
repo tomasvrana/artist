@@ -54,7 +54,9 @@ body {
     filter: blur(10px);
   }
 }
-
+@keyframes noPerspective {
+  100% {transform:rotateX(0deg) rotateY(0deg);}
+}
 
 body {
   animation: backgroundColorCycle 5s linear infinite;

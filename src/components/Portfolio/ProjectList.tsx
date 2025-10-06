@@ -27,6 +27,7 @@ const ProjectCard = styled.article<{ $rotx?: number; $roty?: number; }>`
   width:100%;
   
   .thumbnail{
+    transition: transform .4s;
     transform:rotateX(${props => props.$rotx}deg) rotateY(${props => props.$roty}deg);
     display: block;
     margin:auto;
@@ -137,7 +138,9 @@ const ProjectCard = styled.article<{ $rotx?: number; $roty?: number; }>`
       letter-spacing:.3em;
     }
   }
-
+  &:hover .thumbnail{
+    transform:rotateX(0deg) rotateY(0deg);
+  }
 
 `;
 
